@@ -146,7 +146,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "GAGNÉÉÉÉ *****************. yeeeeaaaaaaah ! Bien ouéj gros" : "T'as perdu ! ........................... t'es grave une merde. Va te coucher. ";
+  var message = won ? "GAGNÉÉÉÉ *****************. yeeeeaaaaaaah ! Bien ouéj gros" : "T'as perdu ! __________________________ t'es grave une merde. Va te coucher. ";
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
